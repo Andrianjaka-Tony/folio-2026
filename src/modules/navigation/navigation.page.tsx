@@ -1,3 +1,3 @@
 export function NavigationPage() {
-  return <div></div>;
+  return <div>Hello, this is the navigation</div>;
 }

@@ -1,4 +1,5 @@
 @import "tailwindcss";
+/* @import url("https://fonts.cdnfonts.com/css/sf-pro-display"); */
 
 :root {
   --background: #ffffff;
@@ -7,8 +8,51 @@
   --menu-background: #e7ded0;
 }
 
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.h-screen {
+  height: 100dvh !important;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+  /* font-family: "SF Pro Display", sans-serif; */
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0.2;
+    transform: translateY(-60vh);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+    transform: translateY(30vh);
+  }
+
+  to {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    transform: translateY(0);
+  }
+}
+
+::view-transition-old(root) {
+  will-change: transform, opacity;
+  animation: 1s cubic-bezier(0.48, 0.02, 0.16, 1.01) both fade-out;
+}
+
+::view-transition-new(root) {
+  will-change: clip-path, transform;
+  animation: 1s cubic-bezier(0.48, 0.02, 0.16, 1.01) both fade-in;
 }
