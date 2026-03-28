@@ -18,7 +18,7 @@ export function AboutContent() {
       ease: "power3.out",
       duration: 0.8,
       stagger: 0.05,
-      delay: 0.45,
+      delay: 0.6,
       onComplete: () => {
         text.revert();
       },
@@ -36,7 +36,7 @@ export function AboutContent() {
       ease: "power3.out",
       duration: 0.8,
       stagger: 0.05,
-      delay: 0.6,
+      delay: 0.75,
       onComplete: () => {
         text.revert();
       },
@@ -52,7 +52,7 @@ export function AboutContent() {
       opacity: 1,
       // clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
       duration: 0.5,
-      delay: 0.55,
+      delay: 0.7,
     });
   };
 

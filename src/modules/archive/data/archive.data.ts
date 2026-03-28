@@ -27,6 +27,9 @@ export const ARCHIVES: ArchiveCol[] = [
   {
     type: "empty",
   },
+  {
+    type: "empty",
+  },
 
   {
     type: "text",
@@ -44,6 +47,9 @@ export const ARCHIVES: ArchiveCol[] = [
     source: "/images/placeholder.png",
     alt: "#5",
     aspectRatio: 1,
+  },
+  {
+    type: "empty",
   },
   {
     type: "empty",
