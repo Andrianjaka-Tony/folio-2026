@@ -14,6 +14,21 @@
   display: none;
 }
 
+* {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  cursor: default;
+}
+
 .h-screen {
   height: 100dvh !important;
 }
@@ -29,6 +44,11 @@ body {
 #about {
   background: #1b1b1b;
   color: #efe1cb;
+}
+
+#archive {
+  background: #efede9;
+  color: #1b1b1b;
 }
 
 @keyframes fade-out {
