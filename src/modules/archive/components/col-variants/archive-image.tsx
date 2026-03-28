@@ -5,7 +5,7 @@ export function ArchiveImage({ archive }: Props) {
   const { source, alt, aspectRatio } = archive;
 
   return (
-    <div className="archive-image mt-30 w-full" style={{ aspectRatio }}>
+    <div className="archive-image w-full" style={{ aspectRatio }}>
       <img
         src={source}
         alt={alt}
